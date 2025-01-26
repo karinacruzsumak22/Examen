@@ -1,0 +1,44 @@
+useng System ;
+useng SYstem.Collection.Generec;
+
+public class ingrediente{
+    public string Nombre {get; set;}
+    public bool Esvegetariano { get; set;}
+
+    public ingredientes(string nombre, bool esvegetariano)
+    {
+      Nombre = Nombre;
+      Esvegetariano = esvegetariano;
+    }
+ }
+ public clas pizza{
+    public string Nombre {get;set;}
+    ingredientes = new lista<ingredientes>();
+ }
+ public void Agregaringredientes(Ingrediente ingredient){
+    Ingrediente.Add(ingrediente);
+ }
+ public voidMostrar ingrediente(){
+    consople.Writeline($"pizza {Nombre} Ingredientes");
+    foreach (var ingrediente in Ingrediente){
+        Console.Writeline($"- {ingrediente.Nombre} (vegetariano: {ingredientes. esvegetariano})");
+    }
+ }
+ public class Programa()
+ {
+    public static void Main()
+    {
+        var pizza = new Pitzza("Margarita");
+        var tomate = new Ingradientes("tomate" true);
+        var queso = new Ingradientes("Queso" true);
+        var albahaca = new Ingradientes("albahaca" true);
+
+
+        pizza.AgragarIngradientes(tomate);
+        pizza.AgragarIngradientes(queso);
+        pizza.AgragarIngradientes(albahaca);
+
+        pizza.Mostraringradientes();
+    }
+ }
+ 
